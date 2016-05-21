@@ -1,18 +1,14 @@
-public abstract class Block {
+public abstract class Block extends Matter {
 
   private int resiliance;
-  private String type;
-  private String texture;
+
+  public Block (String newType, String newTexture) {
+    super (newType, newTexture);
+  }
 
   public int getResiliance () {
     return resiliance;
   }
 
-  public String getType () {
-    return type;
-  }
-
-  public String getTexture () {
-    return texture;
-  }
+  // TODO function ifClicked (Breaking etc.)
 }
