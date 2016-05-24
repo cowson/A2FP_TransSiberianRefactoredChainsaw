@@ -1,7 +1,7 @@
 public abstract class Matter {
 
-  private String type;
-  private String texture;
+  private String _type;
+  private String _texture;
 
   public Matter (String newType, String newTexture) {
     type = newType;
@@ -9,10 +9,10 @@ public abstract class Matter {
   }
 
   public String getType () {
-    return type;
+    return _type;
   }
 
   public String getTexture () {
-    return texture;
+    return _texture;
   }
 }
